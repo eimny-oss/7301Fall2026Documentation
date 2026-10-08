@@ -1,1 +1,8 @@
-Installing 
+# Wordpress Installation
+
+Created new VM instance with more space to host Wordpress
+Installed Apache/Mysql and unzip command
+Created new database and user for use in mysql
+Unzipped Wordpress file, editied configuration.php
+Set up wordpress and logged in on new host site
+Had an issue with an error installing themes on Wordpress and had to consult Burns text; permissions issue
