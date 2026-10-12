@@ -1,0 +1,20 @@
+When going back the next day, my Wordpress would not open.  Turns out this was an issue with permissions that required me going into the Directory -
+  sudo nano /etc/apache2/apache2.conf
+And adding Directory -
+<Directory /var/www/>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+
+The previous day I had also tried to fix the issue of changing IPs every time I closed my VM. I had ran SELECT * FROM wp_options WHERE option_name IN('siteurl','home'); in mysql to make the IP what it was at the time I tried to fix this.
+Unfortunately, this just meant that when I closed the VM again I was unable to open Wordpress.
+I ran the SELECT command again and updated with my current IP:
+> UPDATE wp_options
+    -> SET option_value = 'http://IP/wordpress'
+    -> WHERE option_name = 'siteurl';
+ UPDATE wp_options
+    -> SET option_value = 'http://IP/'
+    -> WHERE option_name = 'home';
+
+This resolved my issues, but it does mean that I need to keep my VM running constantly so the IP doesn't change.
