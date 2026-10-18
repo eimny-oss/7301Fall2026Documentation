@@ -1,4 +1,4 @@
-#Omeka Installation
+# Omeka Installation
 
 Followed general process as outlined in wordpress -
   - download and unzip Omeka Classic file
