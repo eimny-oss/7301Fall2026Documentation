@@ -1,4 +1,4 @@
-# ILS Building: Documentation - Wordpress 
+# ILS Building: Documentation - Omeka
 
 During this assignment, I had a frustrating issue with Omeka installation that hindered my progress for quite some time. Though I followed the installation directions, I was experiencing a 403 Forbidden error when attempting to access my Omeka site.  I had tried to troubleshoot on my own and asked some friends who work with computers for help, but we were all having difficulty finding the exact error when consulting my logs.  Eventually, I scheduled a one on one in which we came across the issue by happenstance.
 
